@@ -1,6 +1,6 @@
 # vue-weather
 
-> 气APP
+> 天气APP
 
 ## Build Setup
 

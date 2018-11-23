@@ -38,18 +38,23 @@
       </div>
       <div class="weather-footer"></div>
     </div>
+    <Menu/>
   </div>
 </template>
 
 <script>
+import Menu from "./components/Menu";
 export default {
   name: "App",
+  components: {
+    Menu
+  },
   data() {
     return {};
   },
-  methods:{
-    bindMenu:(e)=>{
-      console.log(e)
+  methods: {
+    bindMenu: e => {
+      console.log(e);
     }
   }
 };

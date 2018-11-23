@@ -38,7 +38,8 @@
       </div>
       <div class="weather-footer"></div>
     </div>
-    <Menu/>
+    <Menu v-if="ShowMenu"/>
+    <router-link to="/Menu" />
   </div>
 </template>
 
@@ -50,11 +51,14 @@ export default {
     Menu
   },
   data() {
-    return {};
+    return {
+      ShowMenu: false
+    };
   },
   methods: {
-    bindMenu: e => {
+    bindMenu: function(e) {
       console.log(e);
+      this.ShowMenu = !this.ShowMenu 
     }
   }
 };

@@ -5,8 +5,8 @@
       <div class="dot-item"></div>
       <div class="dot-item"></div>
     </div>
+    <div class="menu-trigger" @click="bindMenu">菜单</div>
     <div class="switch-body">
-      <div class="weather-header"></div>
       <div class="weather-body">
         <div class="weather-brief">
           <div class="brief-city brief-item">
@@ -43,7 +43,15 @@
 
 <script>
 export default {
-  name: "App"
+  name: "App",
+  data() {
+    return {};
+  },
+  methods:{
+    bindMenu:(e)=>{
+      console.log(e)
+    }
+  }
 };
 </script>
 
@@ -104,6 +112,12 @@ body {
         margin: 0 0.05rem;
         background: #fff;
       }
+    }
+    .menu-trigger {
+      position: absolute;
+      top: 0.3rem;
+      font-size: 0.2rem;
+      line-height: 0.3rem;
     }
     .weather-body {
       .weather-brief {

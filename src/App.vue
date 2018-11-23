@@ -18,7 +18,7 @@
           </div>
           <div class="brief-detail brief-item">
             <div class="detail-item">
-              <div>巳时</div>
+              <div>14:58</div>
               <div>日出三竿</div>
             </div>
             <div class="detail-item">
@@ -96,6 +96,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 0.2rem;
       .dot-item {
         width: 0.08rem;
         height: 0.08rem;
@@ -117,6 +118,7 @@ body {
           justify-content: space-between;
           font-size: 0.25rem;
           text-align: center;
+          line-height: 0.4rem;
         }
         .brief-item {
           margin-bottom: 0.1rem;

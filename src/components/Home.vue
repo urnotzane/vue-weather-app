@@ -1,11 +1,15 @@
 <template>
-  <div>
-    <div class="switch-dot">
-      <div class="dot-item"></div>
-      <div class="dot-item"></div>
-      <div class="dot-item"></div>
+  <div class="home">
+    
+    <div class="nav-bar">
+      <div @click="bindMenu" class="iconfont icon-liebiao"></div>
+      <div class="switch-dot">
+        <span class="dot-item"></span>
+        <span class="dot-item"></span>
+        <span class="dot-item"></span>
+      </div>
+      <div class="iconfont icon-shezhi"></div>
     </div>
-    <div class="menu-trigger" @click="bindMenu">菜单</div>
     <div class="switch-body">
       <div class="weather-body">
         <div class="weather-brief">
@@ -38,7 +42,6 @@
       </div>
       <div class="weather-footer"></div>
     </div>
-    <Menu v-if="ShowMenu"/>
   </div>
 </template>
 
@@ -50,39 +53,43 @@ export default {
     Menu
   },
   data() {
-    return {
-    };
+    return {};
   },
   methods: {
     bindMenu: function(e) {
-      this.$router.push({path:'/Menu'})
+      this.$router.push({ path: "/Menu" });
     }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.switch-dot {
-  height: 0.3rem;
+.nav-bar {
+  width: 100%;
+  height: 0.666rem;
+  line-height: 0.666rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0.2rem;
-  .dot-item {
-    width: 0.08rem;
-    height: 0.08rem;
-    border-radius: 50%;
-    margin: 0 0.05rem;
-    background: #fff;
+  justify-content: space-between;
+  padding: 0 0.3rem;
+  box-sizing: border-box;
+
+  .switch-dot {
+    height: 0.666rem;
+    line-height: 0.666rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dot-item {
+      width: 0.08rem;
+      height: 0.08rem;
+      border-radius: 50%;
+      margin: 0 0.05rem;
+      background: #fff;
+    }
   }
 }
-.menu-trigger {
-  position: absolute;
-  top: 0.3rem;
-  font-size: 0.2rem;
-  line-height: 0.3rem;
-}
 .weather-body {
+  padding: 0 0.3rem;
   .weather-brief {
     .brief-city {
       font-size: 0.4rem;

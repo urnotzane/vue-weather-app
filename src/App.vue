@@ -51,9 +51,8 @@ body {
   max-width: 540px;
   min-width: 320px;
   margin: 0 auto;
-  font-size: 0.15rem;
+  font-size: 0.18rem;
   #app {
-    padding: 0.3rem;
     position: relative;
     height: 100vh;
     box-sizing: border-box;

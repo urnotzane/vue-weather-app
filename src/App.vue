@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <transition name="slide-fade" mode="out-in"><router-view></router-view></transition>
   </div>
 </template>
 
@@ -56,6 +56,28 @@ body {
     position: relative;
     height: 100vh;
     box-sizing: border-box;
+    .slide-fade {
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    .slide-fade {
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    .slide-fade-enter-active {
+      transition: all 0.5s ease;
+    }
+    .slide-fade-leave-active {
+      transition: all 0.5s cubic-bezier(2, 0.5, 0.8, 1);
+    }
+    .slide-fade-enter,
+    .slide-fade-leave-to {
+      left: 0;
+      right: 0;
+      transform: translateX(100%);
+    }
   }
 }
 </style>

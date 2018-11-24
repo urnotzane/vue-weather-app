@@ -7,7 +7,9 @@
     </div>
     <div class="city-list">
       <div class="list-cell" v-for="item in CityList" :key="item.id">
-        <div class="name">{{item.name}}</div>
+        <div class="name">
+          <span class="iconfont icon-"></span>
+          {{item.name}}</div>
         <div class="tempreture">{{item.tempreture}}°C</div>
       </div>
     </div>
@@ -61,10 +63,10 @@ export default {
     .list-cell {
       display: flex;
       justify-content: space-between;
-      font-size: 0.3rem;
+      // font-size: 0.3rem;
       padding: 0 0.3rem;
-      height: 0.8rem;
-      line-height: 0.8rem;
+      height: 0.6rem;
+      line-height: 0.6rem;
     }
     .list-cell:nth-child(odd) {
       background: rgba(255, 255, 255, 0.1);

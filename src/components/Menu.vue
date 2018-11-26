@@ -3,14 +3,15 @@
     <div class="nav-bar">
       <div @click="bindBack" class="iconfont icon-back"></div>
       <div>城市列表</div>
-      <div class="iconfont icon-bianji"></div>
+      <div class="iconfont icon-bianji" @click="bindEdit"></div>
     </div>
     <div class="city-list">
       <div class="list-cell" v-for="item in CityList" :key="item.id">
         <div class="name">
-          <span class="iconfont icon-"></span>
+          <span class="iconfont icon-back" v-show="inEdit" @click="bindDelete"></span>
           {{item.name}}</div>
-        <div class="tempreture">{{item.tempreture}}°C</div>
+        <div class="tempreture" v-show="!inEdit">{{item.tempreture}}°C</div>
+        <div class="iconfont icon-liebiao" v-show="inEdit"></div>
       </div>
     </div>
   </div>
@@ -37,12 +38,19 @@ export default {
           name: "哈尔滨",
           tempreture: "-10"
         }
-      ]
+      ],
+      inEdit: false,//编辑状态
     };
   },
   methods: {
-    bindBack: function() {
+    bindBack() {
       this.$router.back();
+    },
+    bindEdit() {
+      this.inEdit = !this.inEdit
+    },
+    bindDelete(){
+
     }
   }
 };

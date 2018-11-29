@@ -9,9 +9,12 @@
       <div class="list-cell" v-for="item in CityList" :key="item.id">
         <div class="name">
           <span class="iconfont icon-back" v-show="inEdit" @click="bindDelete"></span>
-          {{item.name}}</div>
-        <div class="tempreture" v-show="!inEdit">{{item.tempreture}}°C</div>
-        <div class="iconfont icon-liebiao" v-show="inEdit"></div>
+          {{item.name}}
+        </div>
+        <div class="tempreture">
+          {{item.tempreture}}°C
+          <span class="iconfont icon-liebiao" v-show="inEdit"></span>
+        </div>
       </div>
     </div>
   </div>
@@ -39,7 +42,7 @@ export default {
           tempreture: "-10"
         }
       ],
-      inEdit: false,//编辑状态
+      inEdit: false //编辑状态
     };
   },
   methods: {
@@ -47,11 +50,9 @@ export default {
       this.$router.back();
     },
     bindEdit() {
-      this.inEdit = !this.inEdit
+      this.inEdit = !this.inEdit;
     },
-    bindDelete(){
-
-    }
+    bindDelete() {}
   }
 };
 </script>
@@ -75,6 +76,10 @@ export default {
       padding: 0 0.3rem;
       height: 0.6rem;
       line-height: 0.6rem;
+      .iconfont {
+        font-size: 0.18rem;
+        padding: 0.1rem;
+      }
     }
     .list-cell:nth-child(odd) {
       background: rgba(255, 255, 255, 0.1);

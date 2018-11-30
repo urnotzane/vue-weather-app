@@ -52,7 +52,7 @@ body {
   max-width: 540px;
   min-width: 320px;
   margin: 0 auto;
-  font-size: 0.18rem;
+  font-size: 0.22rem;
   #app {
     position: relative;
     height: 100vh;

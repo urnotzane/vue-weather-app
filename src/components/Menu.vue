@@ -77,7 +77,7 @@ export default {
       height: 0.6rem;
       line-height: 0.6rem;
       .iconfont {
-        font-size: 0.18rem;
+        font-size: 0.2rem;
         padding: 0.1rem;
       }
     }

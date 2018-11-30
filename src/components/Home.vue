@@ -96,7 +96,7 @@ export default {
   padding: 0 0.3rem;
   .weather-brief {
     .brief-city {
-      font-size: 0.4rem;
+      font-size: 0.35rem;
     }
     .brief-tempreture {
       font-size: 0.8rem;

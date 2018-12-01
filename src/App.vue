@@ -23,8 +23,9 @@ $vw_fontsize: 75; // iPhone 6尺寸的根元素大小基准值
 // 根元素大小使用 vw 单位
 $vw_design: 750;
 html {
-  height: 100vh;
-  font-size: ($vw_fontsize / ($vw_design / 2)) * 100vw;
+  height: 100%;
+  // font-size: ($vw_fontsize / ($vw_design / 2)) * 100vw;
+  font-size: 16px;
   // 同时，通过Media Queries 限制根元素最大最小值
   @media screen and (max-width: 320px) {
     font-size: 64px;
@@ -52,7 +53,7 @@ body {
   max-width: 540px;
   min-width: 320px;
   margin: 0 auto;
-  font-size: 0.22rem;
+  font-size: 16px;
   #app {
     position: relative;
     height: 100vh;

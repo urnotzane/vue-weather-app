@@ -70,66 +70,66 @@ export default {
 }
 .nav-bar {
   width: 100%;
-  height: 0.666rem;
-  line-height: 0.666rem;
+  height: 50px;
+  line-height: 50px;
   display: flex;
   justify-content: space-between;
-  padding: 0 0.3rem;
+  padding: 0 30px;
   box-sizing: border-box;
 
   .switch-dot {
-    height: 0.666rem;
-    line-height: 0.666rem;
+    height: 50px;
+    line-height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     .dot-item {
-      width: 0.08rem;
-      height: 0.08rem;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
-      margin: 0 0.05rem;
+      margin: 0 5px;
       background: #fff;
     }
   }
 }
 .weather-body {
-  padding: 0 0.3rem;
+  padding: 0 30px;
   .weather-brief {
     .brief-city {
-      font-size: 0.35rem;
+      font-size: 26px;
     }
     .brief-tempreture {
-      font-size: 0.8rem;
+      font-size: 50px;
     }
     .brief-detail {
       display: flex;
       justify-content: space-between;
-      font-size: 0.25rem;
+      font-size: 20px;
       text-align: center;
-      line-height: 0.4rem;
+      line-height: 30px;
     }
     .brief-item {
-      margin-bottom: 0.1rem;
+      margin-bottom: 10px;
     }
   }
   .interesting {
     box-sizing: border-box;
     position: absolute;
-    bottom: 0.3rem;
+    bottom: 30px;
     left: 0rem;
-    right: 0.3rem;
-    height: 5.2rem;
+    right: 30px;
+    height: 400px;
     writing-mode: vertical-rl;
-    font-size: 0.3rem;
-    padding: 0.6rem 0;
+    font-size: 24px;
+    padding: 30px 0;
     background: url("../assets/guangzhou.png") left bottom no-repeat;
-    background-size: 4rem;
+    background-size: 350px;
     .interesting-item {
-      line-height: 0.6rem;
-      letter-spacing: 0.12rem;
+      line-height: 50px;
+      letter-spacing: 10px;
     }
     .interesting-item:nth-child(even) {
-      padding-top: 0.42rem;
+      padding-top: 35px;
     }
   }
 }
